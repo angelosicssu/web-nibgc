@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { Roboto} from "next/font/google";
+import { Roboto } from "next/font/google";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube, FaSpotify } from "react-icons/fa";
-
 
 const robotoMono = Roboto({
   subsets: ["latin"],
@@ -11,7 +10,7 @@ const robotoMono = Roboto({
 
 export function Header() {
   return(
-    <aside className={` ${robotoMono.className} flex p-3 justify-between  items-center bg-linear-to-r from-blue-950 to-blue-900 uppercase text-xl text-zinc-200`}>
+    <aside className={`${robotoMono.className} flex p-3 justify-between  items-center bg-linear-to-r from-blue-950 to-blue-900 uppercase text-xl text-zinc-200`}>
       <Image src={'/logo-header.png'} alt="Logo-NIBGC" width={100} height={100}/>
       <ul className="flex cursor-pointer gap-10 items-center">
         <div className="flex gap-5">
